@@ -4,7 +4,6 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd ayam_texture.jpg
-bump  -bm -0.35 ayam_height.jpg
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
