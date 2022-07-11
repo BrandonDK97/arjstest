@@ -21,10 +21,15 @@
     <body style='margin : 0px; overflow: hidden;'>
         <a-scene embedded arjs renderer="precision: medium">
             <!-- create your content here. just a box for now -->
-            <a-entity 
-            obj-model="obj: url(https://pgarjstest.netlify.app/ayamStuff2.obj); 
-            mtl: url(https://pgarjstest.netlify.app/ayamStuff2.mtl)" scale="0.1 0.1 0.1">
-            </a-entity>
+            <!-- <a-entity obj-model="obj: url(https://pgarjstest.netlify.app/resources/ayamStuff2.obj); 
+            mtl: url(https://pgarjstest.netlify.app/resources/ayamStuff2.mtl)" scale="0.1 0.1 0.1">
+            </a-entity> -->
+            <!-- define your gltf asset -->
+            <a-assets>
+                <a-asset-item id="tree" src="/resources/samyang.gltf"></a-asset-item>
+            </a-assets>
+            <!-- use your gltf model -->
+            <a-entity gltf-model="##tree"></a-entity>
             <a-marker-camera preset='hiro'></a-marker-camera>
         </a-scene>
     </body>
