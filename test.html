@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Sample JS Test</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- include A-Frame obviously -->
+    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+    <!-- include ar.js for A-Frame -->
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body>
+
+    <body style='margin : 0px; overflow: hidden;'>
+        <a-scene embedded arjs>
+
+            <!-- <a-entity obj-model="obj: url(https://pgarjstest.netlify.app/resources/ayamStuff2.obj); 
+            mtl: url(https://pgarjstest.netlify.app/resources/ayamStuff2.mtl)" scale="0.1 0.1 0.1">
+            </a-entity> -->
+
+            <a-assets>
+                <a-asset-item id="asset" src="resources/samyang.gltf"></a-asset-item>
+            </a-assets>
+            <a-entity gltf-model="#asset" scale="1 1 1"></a-entity>
+
+            <a-marker-camera preset='hiro'></a-marker-camera>
+        </a-scene>
+    </body>
+</body>
+
+</html>
